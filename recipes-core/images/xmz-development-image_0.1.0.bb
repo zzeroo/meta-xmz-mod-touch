@@ -37,3 +37,7 @@ IMAGE_FEATURES += "tools-debug"
 
 #CORE_IMAGE_EXTRA_INSTALL += "apt"
 CORE_IMAGE_EXTRA_INSTALL += "opkg"
+
+IMAGE_INSTALL += " \
+	xmz-test-gui \
+"
