@@ -4,14 +4,11 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.GPLv2;md5=751419260aa954499f
 
 S = "${WORKDIR}/git"
 
-PR = "r0"
+PR = "r1"
 
 # DEPENDS += " \
-#   gtk+3 \
-# "
-# 
-# RDEPENDS_${PN} = " \
-#   onboard \
-#   xmz-test-gui-init \
 # "
 
+RDEPENDS_${PN} = " \
+  xmz-server-init \
+"
