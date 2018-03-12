@@ -4,7 +4,7 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.GPLv2;md5=751419260aa954499f
 
 S = "${WORKDIR}/git"
 
-PR = "r1"
+PR = "r0"
 
 # DEPENDS += " \
 # "
@@ -12,3 +12,9 @@ PR = "r1"
 RDEPENDS_${PN} = " \
   xmz-server-init \
 "
+
+# Konfiguraton Managment
+# Kopiert die xMZ-Mod-Touch.json Konfigurationsdatei Vorlage nach /usr/share
+do_install_append() {
+  install -Dm0644 ${S}/xmz.toml.example ${D}/usr/share/xmz-server/xmz.toml.example
+}
