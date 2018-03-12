@@ -2,7 +2,7 @@ include recipes-core/images/core-image-base.bb
 
 COMPATIBLE_MACHINE = "bananapro"
 
-PR = "r1"
+PR = "r2"
 
 # Include modules in rootfs
 IMAGE_INSTALL += " \
@@ -22,4 +22,8 @@ IMAGE_INSTALL += " \
 IMAGE_INSTALL += " \
 	locale-base-de-de \
 	coreutils-locale-de \
+"
+
+IMAGE_INSTALL += " \
+	xmz-server \
 "

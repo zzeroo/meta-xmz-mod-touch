@@ -4,6 +4,8 @@ PR = "r0"
 
 # Programs and tools
 IMAGE_INSTALL += "packagegroup-xmz-development"
+# Programs and tools
+IMAGE_INSTALL += "packagegroup-xmz"
 
 # Auto resize root filesystem on first boot
 IMAGE_INSTALL += " \
@@ -37,7 +39,3 @@ IMAGE_FEATURES += "tools-debug"
 
 #CORE_IMAGE_EXTRA_INSTALL += "apt"
 CORE_IMAGE_EXTRA_INSTALL += "opkg"
-
-IMAGE_INSTALL += " \
-	xmz-test-gui \
-"
