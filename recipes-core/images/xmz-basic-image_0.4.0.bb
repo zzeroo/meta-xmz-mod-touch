@@ -2,7 +2,10 @@ include recipes-core/images/core-image-base.bb
 
 COMPATIBLE_MACHINE = "bananapro"
 
-PR = "r2"
+PR = "r0"
+
+# Programs and tools
+IMAGE_INSTALL += "packagegroup-xmz"
 
 # Include modules in rootfs
 IMAGE_INSTALL += " \
