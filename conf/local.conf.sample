@@ -240,7 +240,11 @@ PACKAGECONFIG_append_pn-nativesdk-qemu = " sdl"
 # this doesn't mean anything to you.
 CONF_VERSION = "1"
 
+# Systemd
 DISTRO_FEATURES_append = " systemd"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 DISTRO_FEATURES_BACKFILL_CONSIDERED = "sysvinit"
 VIRTUAL-RUNTIME_initscripts = ""
+
+# https://git.congatec.com/yocto/poky/commit/0e04c93baee6539874e786aa0c7ac0a6369ce7d4
+#hostname_pn-base-files = "your_hostname_here"
