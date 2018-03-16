@@ -9,4 +9,5 @@ COMPATIBLE_MACHINE = "^bananapro$"
 
 RDEPENDS_${PN} = "\
   xmz-server \
+  xmz-gui \
 "
